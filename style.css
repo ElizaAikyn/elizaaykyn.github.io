@@ -126,7 +126,6 @@ header
 {
     min-width: 50%;
     width: 50%;
-    text-align: end;
     padding-right: 40px;
 }
 .titleText
@@ -135,6 +134,7 @@ header
     color: #fff;
     font-size: 2em;
     margin-bottom: 10px;
+    text-align: center;
 }
 .text
 {
@@ -182,17 +182,8 @@ header
     z-index: 1;
     background: linear-gradient(to bottom,#111,transparent);
 }
-.destination
-{
-    text-align: left;
-}
-.destination .conetnt
-{
-    text-align: left;
-}
 .destination .ol .li
 {
-    text-align: left;
     color: #fff;
 }
 .destinationList
@@ -247,28 +238,26 @@ header
     font-weight: 300;
     opacity: 0.5;
 }
-.food
+table
 {
-    text-align: left;
-}
-.food .contents
-{
-    text-align: right;
-}
-.table
-{
-    position: relative;
     border-collapse: collapse;
-    width: 70%;
+    width: 50%;
     color: #fff;
 }
-.table .tr
-{
-    color: #fff;
+
+.subcont {
+    display: flex;
+    justify-content: space-evenly;
 }
-.table .tr .th
-{
-    height: 500px;
-    text-align: left;
-    border-bottom: 10px solid rgb(200, 200, 200);
+
+table, th, td {
+    border: #ddd 1px solid;
+}
+
+th, td {
+    padding: 10px;
+}
+
+hr {
+    margin: 40px 0;
 }
