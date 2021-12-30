@@ -1,0 +1,272 @@
+@import url('http:fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: #111;
+}
+section
+{
+    position: relative;
+    padding: 100px;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 100000;
+}
+.container header .logo{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+}
+.container header ul{
+    position: relative;
+    display: flex;
+}
+.container header ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+.container header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4px 10px;
+    color: #fff;
+}
+.container header ul li a:hover,
+.container header ul li a:active
+{
+    background: #fff;
+    color: black;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top,#111,transparent);
+}
+.banner .content
+{
+    position: relative;
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+.banner .content h2
+{
+    color: #fff;
+    font-size: 4em;
+}
+.banner .content p
+{
+    color: #fff;
+    font-size: 1.2em;
+}
+.btn
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+}
+.fitBg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.about
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .contentBx
+{
+    min-width: 50%;
+    width: 50%;
+    text-align: end;
+    padding-right: 40px;
+}
+.titleText
+{
+    font-weight: 600;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.text
+{
+    color: #fff;
+    font-size: 1em;
+}
+.about .imgBx
+{
+    position: relative;
+    min-width: 50%;
+    width: 50%;
+    min-height: 500px;
+}
+.banner2,
+.banner3
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner2::before,
+.banner3::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#111,transparent);
+}
+.banner2::after,
+.banner3::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#111,transparent);
+}
+.destination
+{
+    text-align: left;
+}
+.destination .conetnt
+{
+    text-align: left;
+}
+.destination .ol .li
+{
+    text-align: left;
+    color: #fff;
+}
+.destinationList
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.destinationList .box
+{
+    position: relative;
+    min-width: 350px;
+    height: 480px;
+    background: #191919;
+    transition: 0.5s;
+    margin: 10px;
+}
+.destinationList:hover .box
+{
+    opacity: 0.2;
+}
+.destinationList .box:hover
+{
+    opacity: 1;
+}
+.destinationList .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.destinationList .box .content
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destinationList .box .content h2
+{
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+.destinationList .box .content h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 0.5;
+}
+.food
+{
+    text-align: left;
+}
+.food .contents
+{
+    text-align: right;
+}
+.table
+{
+    position: relative;
+    border-collapse: collapse;
+    width: 70%;
+    color: #fff;
+}
+.table .tr
+{
+    color: #fff;
+}
+.table .tr .th
+{
+    height: 500px;
+    text-align: left;
+    border-bottom: 10px solid rgb(200, 200, 200);
+}
